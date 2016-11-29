@@ -1,11 +1,14 @@
 import React from 'react';
 
+import NavHeader from './component/NavHeader';
+import NavFooter from './component/NavFooter';
 class App extends React.Component {
   render () {
     return(
       <div>
-        App
+        <NavHeader />
         {this.props.children}
+        <NavFooter />
       </div>
     )
   }
