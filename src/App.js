@@ -4,7 +4,8 @@ class App extends React.Component {
   render () {
     return(
       <div>
-        zza
+        App
+        {this.props.children}
       </div>
     )
   }
