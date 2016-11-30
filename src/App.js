@@ -1,5 +1,7 @@
 import React from 'react';
 
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
 import NavHeader from './component/NavHeader';
 import NavFooter from './component/NavFooter';
 class App extends React.Component {
@@ -9,6 +11,9 @@ class App extends React.Component {
       title:'Home'
     }
   }
+  getChildContext(){
+    return {muiTheme:getMuiTheme()}
+  }
   componentWillReceiveProps(){
     this.setTitle()
   }
@@ -17,9 +22,9 @@ class App extends React.Component {
   }
   setTitle(){
     this.setState({
-      title:this.context.router.isActive('/',true) ? 'Home' :
-            this.context.router.isActive('/Blog') ? 'Blog' :
-            this.context.router.isActive('/Work') ? 'Work' : 'About'
+      title:this.props.router.isActive('/',true) ? 'Home' :
+            this.props.router.isActive('/Blog') ? 'Blog' :
+            this.props.router.isActive('/Work') ? 'Work' : 'About'
     })
   }
   render () {
@@ -36,7 +41,7 @@ class App extends React.Component {
     )
   }
 }
-App.contextTypes={
-  router:React.PropTypes.object
+App.childContextTypes={
+  muiTheme:React.PropTypes.object
 }
 export default App;

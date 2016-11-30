@@ -60,7 +60,7 @@
   display: flex;
 }
 .home-cover{
-  background-color:rgba(0,0,0,0.5);
+  background-color:rgba(0,0,0,0.4);
   flex-grow: 1;
   align-items: center;
   display: flex;
@@ -69,4 +69,31 @@
   flex-grow: 1;
   text-align: center;
   margin: 0 auto;
+}
+.home-item button{
+  background: #006064;
+  color:#e0e0e0;
+  border:none;
+  border-radius: 2px;
+  padding: 3px 6px;
+  outline: none;
+}
+.home-item button a{
+  color:#e0e0e0;
+  text-decoration: none;
+}
+.about-wrap{
+  flex-grow: 1;
+  padding: 10px;
+}
+.git-card{
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.17) 3px 3px 6px;
+  padding: 5px;
+}
+.about-form{
+  margin:0 auto;
+  display: block;
+  width:80%;
+  max-width: 560px;
 }
