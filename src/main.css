@@ -97,3 +97,10 @@
   width:70%;
   max-width: 560px;
 }
+.show-git{
+  display: flex;
+  box-shadow: 1px 1px 4px #ccc;
+  justify-content: space-around;
+  font-size: 13px;
+  color: #4DD0E1?
+}
