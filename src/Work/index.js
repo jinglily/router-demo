@@ -67,7 +67,7 @@ class Work extends React.Component {
           xAxis : [
               {
                   type : 'category',
-                  data : ['Ajax', 'Jquery', 'Nodejs', 'bootstrap', 'material-ui'],
+                  data : ['Ajax', 'Jquery', 'Nodejs', 'bootstrap', 'material-ui','echarts'],
                   axisTick: {
                       alignWithLabel: true
                   }
@@ -80,10 +80,10 @@ class Work extends React.Component {
           ],
           series : [
               {
-                  name:'直接访问',
+                  
                   type:'bar',
                   barWidth: '50%',
-                  data:[95, 95, 80, 90, 70, ]
+                  data:[95, 95, 80, 90, 70, 85 ]
               }
           ]
       };
