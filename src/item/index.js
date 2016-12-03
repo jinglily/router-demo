@@ -1,5 +1,5 @@
 import React from 'react';
-
+import marked from 'marked';
 class Item extends React.Component {
   render () {
     console.log(this.props)
@@ -7,6 +7,8 @@ class Item extends React.Component {
     return(
       <div>
         {web}
+        {marked('# aaaa')}
+        <div dangerouslySetInnerHTML={{__html:marked('# aaaa')}}></div>
       </div>
     )
   }
