@@ -80,7 +80,7 @@ class Work extends React.Component {
           ],
           series : [
               {
-                  
+
                   type:'bar',
                   barWidth: '50%',
                   data:[95, 95, 80, 90, 70, 85 ]
