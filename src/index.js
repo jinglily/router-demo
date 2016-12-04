@@ -3,7 +3,7 @@ import {render} from 'react-dom';
 
 import Routes from './routes.js';
 import './main.css';
-
+import './post.css'
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();

@@ -17,7 +17,7 @@ class Item extends React.Component {
   render () {
     let content=this.state.data.length==0 ? <Loading /> : <div dangerouslySetInnerHTML={{__html:marked(this.state.data)}} />
     return(
-      <div style={{flexGrow:'1'}}>
+      <div className='post-wrap' style={{flexGrow:'1'}}>
         {content}
       </div>
     )
