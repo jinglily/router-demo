@@ -8,6 +8,38 @@
   flex-grow: 1;
   overflow-y: scroll;
 }
+@media(min-width:760px){
+  .my-wrap{
+    flex-direction: row;
+
+  }
+}
+.leftnav-wrap{
+  width: 260px;
+  background:#26A69A;
+}
+.leftnav-wrap h3{
+  color: #fff;
+
+  margin:0;
+  padding: 20px 30px;
+  font-weight: bold;
+  border-bottom: 3px solid #baba55;
+}
+.leftnav-wrap a{
+  display: block;
+  padding-left: 40px;
+  color:#fff;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.leftnav-wrap a span{
+  margin-right: 5px;
+}
+
+
 .nav-footer{
   height: 80px;
   background:#26A69A;
@@ -145,5 +177,5 @@
   margin: 0px 10px;
 }
 .bolg-btn{
-  margin: 0 auto;  
+  margin: 0 auto;
 }
